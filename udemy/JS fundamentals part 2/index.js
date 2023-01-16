@@ -166,3 +166,100 @@
 // }
 
 //test 8
+
+// function calcTip (bill){
+//     if (bill>=50&&bill<=300){
+//         return (bill * 15)/100;
+//     }
+//     else{
+//         return (bill * 20)/100;
+//     }
+// }
+//  const bills = [125, 555, 44];
+// const tips = [bills[0], bills[1], bills[2] ];
+// const total = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+
+// console.log(total[2]);
+
+//test9
+// const Paata = {
+//     firstName: 'Paata',
+//     lastName: 'tsitsishvili',
+//     age: 2023-1996,
+//     job: 'tutor',
+//     languages: ['html','css','javascript']
+// };
+// console.log(Paata['lastName']);
+// console.log(Paata.languages[1]);
+
+//important part--
+// const nameKey = 'Name';
+// console.log(Paata['first'+nameKey]);
+// console.log(Paata['last'+nameKey]);
+
+// const interestedIn = prompt ('what do you want to know about me?choose between firstName, lastName, age, job or languages ');
+// console.log(Paata[interestedIn]);
+
+//now with if else -- 
+// if(Paata[interestedIn]){
+//     console.log(Paata[interestedIn])
+// }else{
+//     console.log('wrong request!')
+//};
+
+//how to add objects to arrays from outside (2 ways)
+// Paata.location = 'Tbilisi';
+// Paata ['marriedTo'] = 'Ani';
+// console.log(Paata['marriedTo']);
+
+//just try
+// console.log(`${Paata.firstName} knows ${Paata.languages.length} languages, and his favorite one is ${Paata.languages[2]}`);
+
+
+//test10
+// const Paata = {
+//     firstName: 'Paata',
+//     lastName: 'tsitsishvili',
+//     location: 'Tbilisi',
+//     languages: ['html','css','javascript'],
+//     hasDrivingLicense: true,
+
+//     calcAge: function(birthYear){
+//        return 2023-birthYear;
+//     }
+    
+// }
+// console.log(Paata.calcAge(1996));
+// console.log(Paata['calcAge'](1996));
+
+//this keyword
+//this keyword hold the whole object(array)
+//this keyword is essential for 'don't repeat youself' principle
+
+// const Paata = {
+//     firstName: 'Paata',
+//     lastName: 'tsitsishvili',
+//     birthyear: 1996,
+//     location: 'Tbilisi',
+//     languages: ['html','css','javascript'],
+//     job: 'tutor',
+//     hasDrivingLicense: false,
+    
+//     calcAge: function(){
+//         this.age = 2023 - this.birthyear;
+//         return this.age;
+//     },
+// getSummary : function(){
+//     return `${this.firstName} is ${this.age} years old ${this.job} and he has ${this.hasDrivingLicense ? 'a ' : 'no '}driving License }`
+// }
+
+
+
+// };
+
+// console.log(Paata.calcAge());
+// console.log(Paata.getSummary());
+
+//test11
+
+
